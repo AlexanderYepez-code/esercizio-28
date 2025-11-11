@@ -36,3 +36,29 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+
+// prendo gli output dove si andra a sostituire i dati dall array
+
+const name = document.querySelector(".nome");
+const professione = document.querySelector(".professione");
+const contatti = document.querySelector("contatti");
+const imgTeam = document.querySelector(".img")
+const card = document.querySelector(".cards")
+console.log(name, professione, contatti, imgTeam)
+
+for (let i = 0; i < teamMembers.length; i++) {
+  console.log(i)
+  const { name, role, email, img } = teamMembers[i];
+  const items = `<div class="col bg-dark d-flex ">
+  <div class="col">
+                    <img class="img" src="./${img}" alt="">
+                </div>
+                <div class="col-70">
+                    <h2 class="nome">${name}</h2>
+                    <h3 class="professione">${role}</h3>
+                    <a class="contatti" href="">${email}</a>
+                </div>`
+card.innerHTML += items
+
+}
