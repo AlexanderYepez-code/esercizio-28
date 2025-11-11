@@ -17,6 +17,7 @@ img{
 }
 a{
     text-decoration: none;
+    color: lightblue;
 }
 .container{
     margin: 50px auto;
@@ -55,6 +56,9 @@ a{
 .mt-2{
     margin-top: 20px;
 }
+.formdipendente{
+    border-top: 2px solid black;
+}
 
 .d-flex{
     display: flex;
@@ -64,6 +68,9 @@ a{
     
 
 }
+.p-left{
+    padding-left: 10px;
+}
 .gap{
     gap: 20px;
 }
@@ -72,4 +79,34 @@ a{
 }
 .col-70{
     width: 70%;
+}
+.btn{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: blue;
+    color: white;
+    
+}
+label {
+  display: block;
+  margin-bottom: 4px; /* piccolo spazio tra label e input */
+  font-size: 1.2rem;
+}
+input {
+  width: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 2px double rgb(27, 31, 233);
+}
+
+
+@media screen and ( max-width: 800px){
+    .col{
+        width: 100%;
+    }
+    input{
+        width: 100%;
+    }
+
 }
